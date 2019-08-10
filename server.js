@@ -11,7 +11,7 @@ let itemSchema = require('./models/model')
 app.use(cors())
 app.use(bodyParser.json())
 
-const mongoURI = 'mongodb+srv://db-user:OZtDjGLiP68cawUq@bucket-list-ymsna.mongodb.net/test?retryWrites=true&w=majority'
+const mongoURI = 'mongodb+srv://<DBuser>:<DBpassword>@bucket-list-ymsna.mongodb.net/test?retryWrites=true&w=majority'
 
 mongoose.connect(mongoURI, { useNewUrlParser: true })
 
